@@ -1,0 +1,696 @@
+\documentclass[12pt, letterpaper]{report}
+\usepackage{draftwatermark}\SetWatermarkScale{5}%\SetWatermarkText{\textsc{D}}
+\usepackage{censor}
+\usepackage[margin=1.07truein]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}\pagestyle{fancy}
+\usepackage{multicol}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hyperref}
+\usepackage{makeidx}
+\usepackage{booktabs}
+\usepackage{lineno}[modulo]
+\usepackage{longtable}
+\usepackage{graphics}
+\usepackage{titlesec}
+\usepackage{xfrac}
+\usepackage{lineno}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\makeindex
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside%
+    \ifodd\c@page\else
+    \vspace*{\fill}
+    \hfill
+    \begin{center}
+    \textsc{\Large This page intentionally left blank.}
+    \end{center}
+    \vspace{\fill}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi
+}
+\makeatother
+\makeatletter
+\def\@makechapterhead#1{%
+	%%%%\vspace*{50\p@}% %%% removed!
+	{\parindent \z@ \raggedright \normalfont
+		\ifnum \c@secnumdepth >\m@ne
+		\huge\bfseries \@chapapp\space \thechapter
+		\par\nobreak
+		\vskip 20\p@
+		\fi
+		\interlinepenalty\@M
+		\Huge \bfseries #1\par\nobreak
+		\vskip 40\p@
+}}
+\def\@makeschapterhead#1{%
+	%%%%%\vspace*{50\p@}% %%% removed!
+	{\parindent \z@ \raggedright
+		\normalfont
+		\interlinepenalty\@M
+		\Huge \bfseries  #1\par\nobreak
+		\vskip 40\p@
+}}
+\makeatother
+\makeatletter
+\@addtoreset{chapter}{part}
+\makeatother
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{\Huge Article \thechapter}{12pt}{\huge}
+\title{Comprehensive Constitutional Government} 
+\author{Rian Fantozzi}
+\date{\today}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\textsc{Confidential}}
+\renewcommand{\partname}{Document}
+%\cfoot{}
+\rfoot{\textsc{Do Not Distribute}}
+%TODO Modfiy \Part such that it centers at top of page without declaring part number
+\begin{document}
+		\begin{titlepage}
+		\center 
+		%header
+		\textsc{\LARGE Juniata College Student Government}\\[1cm] % Name of of org
+		\textsc{\Large Policy Committee}\\[0.5cm] % Name of Proj
+		\textsc{\large \textit{}}\\[0.5cm] % more name
+		%title		    
+		\HRule \\[0.4cm]
+		{\Huge \bfseries\\ Document Drafting Guidelines }\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		%author&supe
+		
+		
+		%only author
+		\Large \emph{Prepared by:}\\
+        {Policy Committee}\\[2.5cm] % Your name
+
+		%dates		
+		{\large \textit{\textsc{last modified:\\}}\today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+		
+		%loglo
+		
+		\includegraphics{studgov-small.png}\\[0.5cm] % Include a department/university logo - this will require the graphicx package
+		
+		%----------------------------------------------------------------------------------------
+		
+		\vfill % Fill the rest of the page with whitespace
+		
+	\end{titlepage}
+
+	\begin{linenumbers}
+	\modulolinenumbers[5]
+	\pagewiselinenumbers
+	\chapter{Types of Documents}
+        \section{Governing}
+        Governing documents are voted upon by the Student Body, or are direct supports to documents that are voted upon by the Student Body. They define and limit specific processes that can be undertaken by the Student Government.  \par It is unlikely that other documents will be added to this list without a major overhaul of the government. Therefor
+        \subsection{The Constitution}
+        The Constitution is primarily concerned with defining processes that can be undertaken. It does not concern itself with the specifics of those processes. However, the specifics of those processes must still conform to it as stated under Article \ref{Super} of the Constitution. The Constitution should not refer to any particular organization that is not defined within itself for the execution of those processes.
+        \par The Constitution is also special since it is self-sovereign. It is the only document that is allowed to give itself authority over other documents. It also gains this authority from itself. No external organization, including the administration of Juniata College, may modify or violate this Constitution. 
+        \par Please note, that the Constitution is still subject to the laws of the jurisdiction that the institution is located within. If the Constitution is found to be in violation of any of these laws, it does not offer defense for the individual who undertook an action as a result of the Constitution. 
+        \subsection{General Bylaws}
+        The General Bylaws are primarily concerned with the execution and limitation of specific processes that can be undertaken by the Student Government. The specifics 
+	    \section{Legally Binding}
+	        \subsection{Financial Bylaws}
+	        \subsection{Standing Orders}
+	        \subsection{Spending Bills}
+        \section{Legally Non-binding}
+	        \subsection{Resolutions}
+	         Resolutions are statements on the position of the Student Body, and as such are not binding. However, they are still written in legal language, and thus the definitions as in listed in Article \ref{DDG-LegalDef} of the Document Guidelines still apply. 
+	         \subsection{Executive Statements}
+	          Executive Statements are statements on the position of, or actions requested by, the Executive Council, and as such are not binding. However, they are still written in legal language, and thus the definitions as in listed in Article \ref{DDG-LegalDef} of the Document Guidelines still apply.
+	    \section{Nonlegal Documents}
+	        \subsection{Allocation Rubrics}
+	        Allocations Board produces an internal rubric by which they judge allocations so that all organizations are operating on a level playing field. This rubric however, is not a legal document, and not binding for the dispersement of funds to organizations.
+	        \subsection{Memos}
+	        Memos may be issued by any member of Student Government to clarify their position, or a previous position of the government. These are never binding and should not be taken to be written in legal language. 
+        \section{Supporting Documents}
+        Supporting documents are special case. The number of these documents should be minimized. This document, the Document Guidelines, is a supporting document. It share features of both Governing documents and Nonlegal documents. Article \ref{DDG-LegalDef} is a governing article that does not define, limit, or modify any particular process but, instead handles the intricacies of the words used within all other documents. 
+	\chapter{Legal Definitions}
+	\label{DDG-LegalDef}
+    	\begin{quote}
+    	    This is not a definitive list of legal terms. The definitions included here may differ from other definitions that one can find on the internet or other sources. These definitions are the ones used in all governing document of the Student Government of Juniata College. The content of this article is immutable. 
+    	\end{quote}
+    	\section{``May''}
+    	    \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+                \item ``May'' represents a granting of permission to take an action.
+                \item ``May'' is not binding.
+            \end{enumerate}
+    	\section{``Should''}
+    	    \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+                \item ``Should'' represents a recommendation to take an action.
+                \item If ``Should'' is in a legal document then, there is an implicit grant of permission.
+                \item ``Should'' is not binding.
+            \end{enumerate}
+    	\section{``Will''}
+    	    \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+                \item   ``Will'' represents a future action to be taken.
+                \item	If ``will'' is in a legal document then, there is an implicit grant of permission.
+            	\item	``Will'' is not ultimately binding.
+            	\item	``Will'' statements may be non binding if extraneous circumstances are present.
+            	\item	In all other cases ``will'' is binding.        
+            \end{enumerate}
+    	\section{``Must''}
+    		    \begin{enumerate}
+                 \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+    	           \item ``Must'' represents a requirement to take an action.
+                   \item  If ``must'' is in a legal document then, there is an implicit grant of permission.
+                   \item ``Must'' is ultimately binding, regardless of circumstance.
+            \end{enumerate}
+        \section{``Shall''}
+            \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+            	\item``Shall'' represents a requirement to take action, without a future action.
+            	\item  ``Shall'' has no clear meaning.
+            	\item If ``shall'' is in a legal document then, there does not exist an implicit grant of permission.
+            	\item ``Shall'' must not be used in any future documents
+            	\item If present in legacy documents, ``shall'' must be taken to mean ``must''.
+            \end{enumerate}
+    	\section{``Not''}
+    	    \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+    	        \item ``Not'' represents the direct negation of the previous legal term.
+    	        \item ``Not'' represents a lack of permission.
+            \end{enumerate}
+    	\section{``Only''}
+        	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+    	        \item ``Only'' represents the restriction of the previous legal term.
+    	        \item ``Should only'' does not void permission by omission.
+    	        \item In all other cases, ``only'' voids any permission by omission.
+            \end{enumerate}
+    	\section{``Immutable''}
+	    	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+        	    \item Portions of documents rendered ``immutable'' must not be modified in any way by any circumstance.
+        	    \item ``Immutable'' sections may be rendered void by another overriding section in a document of higher authority.
+            \end{enumerate}
+    	\section{``Article''}
+        	\begin{enumerate}
+                \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+            	    \item The highest level of organization within a document is an ``Article''.
+            	    \item The numbering of Articles will be in Arabic numerals.
+            	    \item Articles may not contain operative statements that are not contained within another organizational layer.
+            	    \item Articles should not be be made immutable.
+            	    \item Shorter documents will be implied to have a single unnumbered article.
+            \end{enumerate}
+    	\section{``Section''}
+        \begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+        	    \item The primary level of organization within a document is a ``Section''.
+        	    \item The numbering of Sections will be in Arabic numerals.
+        	    \item Steps should be taken to reduce the number of subsections
+        	    \item If a subsection is needed, it will also be listed with an Arabic numeral.
+    	    \end{enumerate}
+    	\section{``Clause''}
+    	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+        	    \item The lowest level of organization within a document is a ``Clause''.
+        	    \item The numbering of Clauses will be in lowercase English letters.
+        	    \item Clauses should be the primary location of operative actions.
+        	    \item Clauses should not contain multiple operative actions, unless the two actions are very closely linked.
+        	    \item Clauses must not have subclauses.
+	     \end{enumerate}
+	    \section{``Preambulatory''}
+	    	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+            	\item Statements made in articles but not contained within a section are ``preambulatory''.
+        	    \item ``Preambulatory'' clauses found in articles provides clarifying narrative.
+        	    \item Statements made in Standing Orders, Resolutions, or Spending Bills that are not numbered are also considered ``preambulatory''.
+        	    \item ``Premambulatory'' clauses found in Standing Orders, Resolutions, or Spending Bills explain the reasoning behind the Standing Order, Resolution, or Spending Bill and should be terminated with a comma.
+        	    \item ``Preambulatory'' clauses must not contain any operative action.
+        	    \item The content of a ``preambulatory'' clause may not request any action be taken. 
+            \end{enumerate} 
+        \section{``Operative''}
+	    	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+        	    \item Statements made in articles but not contained within a section are ``preambulatory''.
+        	    \item ``Operative'' clauses found in articles provides actions to be taken
+        	    \item Statements made in Standing Orders, Resolutions, or Spending Bills that are numbered are also considered ``operative''.
+        	    \item ``Operative'' clauses found in Standing Orders, Resolutions, or Spending Bills explain the reasoning behind the Standing Order, Resolution, or Spending Bill and should be terminated with a semicolon.
+        	    \item ``Operative'' clauses must contain operative action.
+            \end{enumerate} 
+        \section{``Comment''}
+    	\begin{enumerate}
+            \renewcommand{\labelenumi}{\bfseries\alph{enumi})}
+        	    \item If clarification is needed on a clause, a ``comment'' may be added.
+        	    \item Comments are not enumerated.
+        	    \item The totality of the comment is to be italicized
+        	    \item Comments may not have subcomments.
+        	    \item Each clause may only have one comment.
+        	    \item There is no limit to the amount of information that can be in a comment.
+        	    \item Information within a comment is not operative in itself.
+        	\end{enumerate}
+        \section{``Commiittee''}
+        \section{``Board''}
+	\chapter{Words to Avoid}
+	The following list of words should not be present in any governing document. They confuse the meaning of other words, or in the case of ``shall'', have no clear legal meaning. 
+	\begin{multicols}{2}
+			\begin{enumerate}\renewcommand{\labelenumi}{\bfseries\arabic{enumi})}
+			\item 		abeyance
+			\item 		above [as an adjective]
+			\item 		above-mentioned
+			\item 		afore-granted
+			\item 		afore-mentioned
+			\item 		aforesaid
+			\item 		before-mentioned
+			\item 		henceforward
+			\item 		hereby
+			\item 		herein
+			\item 		hereinafter
+			\item 		hereinbefore
+			\item 		hereunto
+			\item       not only
+			\item 		pursuant
+			\item 		said [as a substitute for "the", "that", or "those"]
+			\item 		same [as a substitute for "it", "he", "him", "she", or "her"]
+			\item 		shall [instead of "may", "will", or "must"]
+			\item 		thenceforth
+			\item 		thereunto
+			\item 		therewith
+			\item 		to wit
+			\item 		under-mentioned 
+			\item 		unto
+			\item 		whatsoever
+			\item whensoever
+			\item 		wheresoever
+			\item 		whereas
+			\item 	whereof
+			\item 		whosoever
+			\item within-named
+			\item witnesseth
+		\end{enumerate}
+		
+	\end{multicols}
+	\chapter{Principles of Clear Writing}
+	    \section{Write in the active voice}
+	    The active voice eliminates confusion by forcing you to name the actor in a sentence. This construction makes clear to the reader \textbf{who} is to perform the duty.\\
+	    The passive voice makes sentences longer and roundabout. Who is responsible is much less obvious. Passive verbs have a form of the verb to be plus the past participle of a main verb.
+	    \begin{table}[h]
+	        \centering
+	        \begin{tabular}{ccccccc}
+	             am & is & are & was & were & be & been  \\
+	            \end{tabular}
+	        \caption{Passive verbs}
+	        \label{tab:passverbs}
+	    \end{table}
+	    plus a main very usually ending in ``en'' or ``ed''.\\
+	    Examples of passive verbs:
+	    \begin{itemize}
+	        \item was received
+	        \item is being considered
+	        \item has been selected
+	    \end{itemize}
+	    The passive voice reverses the natural, active order of English sentences. In the following passive example the receiver of the action comes before the actor.\\\\
+        \textbf{Passive: }The regulation [receiver] was written [verb] by the drafter [actor].\\
+        \textbf{Active: }The drafter [actor] wrote [verb] the regulation [receiver].\\\\
+        Passive constructions are confusing when used in regulations and policy. Active sentences must have actors, but passive ones are complete without them.\\
+        \begin{tabular}{c|c}
+            The material will be delivered. &  By whom?\\
+            The start date is to be decided. & By whom?\\
+            The figures must be approved. & By whom?
+        \end{tabular}\\
+        Putting the actor before the verb forces you to be clear about responsibility.
+        \begin{itemize}
+            \item     The messenger will deliver the material.
+            \item    The contractor will decide the start date.
+            \item    The administrator must approve the figures.
+        \end{itemize}
+        \textbf{The passive voice is appropriate when the actor is unknown, unimportant, or obvious. This does not usually apply in regulatory text. }
+        \begin{itemize}
+            \item Small items are often stolen
+            \item The applications have been mailed
+        \end{itemize}
+    \section{Use action verbs}
+    Avoid words like this:
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+            \textsc{\textbf{Don't Say}} & \textsc{\textbf{Say}} \\
+             give consideration to & consider\\
+             is applicable to & applies to\\
+             make payment & pay \\
+             give recognition to & recognize \\
+             is concerned with & concerns
+        \end{tabular}
+             \caption{Nominals}
+	        \label{tab:nominals}
+    \end{table}
+    They are called "nominals" -- nouns with verbs inside. They are hard to read and make sentences longer. Action verbs are shorter and more direct. The exception to this comes in the preambulatory clauses of Resolutions.
+    \section{Use ``must'' instead of ``shall''}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+            shall & imposes an obligation to act, but may be confused with prediction of future action \\
+            will & predicts future action\\
+            must & imposes obligation, indicates a necessity to act\\
+            must not & 	indicates a prohibition\\
+            should & infers obligation, but not absolute necessity\\
+            may & indicates discretion to act
+        \end{tabular}
+        \caption{Alternatives to ``shall''}
+        \label{tab:shallalts}
+    \end{table}
+    To impose a legal obligation, use "must."\\
+    To predict future action, use "will."\\\\
+    \textbf{DON'T SAY: }The Governor shall approve it.\\
+    \textbf{SAY: }The Governor must approve it. [obligation]\\
+    \textbf{OR: }The Governor will approve it. [future action]
+    \section{Be direct}
+    Talk directly to your readers. Use the imperative mood. Regulations lend themselves to this style, especially procedures, how-to instructions, and lists of duties.\\\\
+    Directness avoids the passive voice:\\
+    \textbf{SAY: }Sign all copies.\\
+    \textbf{SAY: }Attach a copy of your W-2 to your return.\\\\
+    This style results in procedures that are shorter, crisper, and easier to understand
+    \section{Use the present tense}
+    A regulation of continuing effect speaks as of the time you apply it, not as of the time you draft it or when it becomes effective. For this reason, you should draft regulations in the present tense. By drafting in the present tense, you avoid complicated and awkward verb forms.\\\\
+    \textbf{DON'T SAY: }The fine for driving without a license \textbf{shall be} \$10.00.\\
+    \textbf{SAY: }The fine for driving without a license is \$10.00.
+    \section{Write positively}
+    If you can accurately express an idea either positively or negatively, express it positively.\\\\
+    \textbf{DON'T SAY: }The Governor may not appoint persons other than those qualified by the Personnel Management Agency.
+    \textbf{SAY: }The Governor must appoint a person qualified by the Personnel Management Agency.\\\\
+    A negative statement can be clear. Use it if you're cautioning the reader.\\\\
+    DON'T WALK\\
+    DON'T SMOKE\\\\
+    But avoid several negatives in one sentence.\\\\
+    \textbf{DON'T SAY: }A demonstration project will not be approved unless all application requirements are met.\\
+    \textbf{SAY: }A demonstration project will be approved only if the applicant meets all requirements.\\\\
+    It's better to express even a negative in positive form. 
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+            \textsc{\textbf{Don't Say}}   &  \textsc{\textbf{Say}}\\
+            not honest & dishonest \\
+            did not remember & forgot \\
+            did not pay any attention to & ignored\\
+            did not remain at the meeting & left the meeting \\
+            did not comply with & violated\\
+            failed to comply with & violated
+        \end{tabular}
+        \caption{Negative vs. Positive Forms}
+        \label{tab:posforms}
+    \end{table}
+    \section{Avoid the use of exceptions}
+     If possible, state a rule or category directly rather than describing that rule or category by stating its exceptions.\\\\
+     \textbf{DON'T SAY: }All persons except those 18 years or older must...\\
+     \textbf{SAY: }Each person under 18 years of age must...\\\\
+    However, you may use an exception if it avoids a long and cumbersome list or elaborate description. When you use an exception, state the rule or category first then state its exception.\\\\
+    \textbf{DON'T SAY: }Alabama, Alaska,... and Wyoming (a list of 47 states) must ration...\\
+    \textbf{SAY: }Each state except Texas, New Mexico, and Arizona must ration... (Note that the category "each State" is established first and then the exceptions are stated.)
+    \section{Avoid split infinitives}
+    The split infinitive offends many readers, so avoid it if you can.\\\\
+    \textbf{DON'T SAY:} Be sure to promptly reply to the invitation.\\
+    \textbf{SAY:} Be sure to reply promptly to the invitation. or SAY: Be sure to reply to the invitation promptly. 
+    \section{Use the singular noun rather than the plural noun} 
+    To the extent your meaning allows, use a singular noun instead of a plural noun. You will avoid the problem of whether the rule applies separately to each member of a class or jointly to the class as a whole.\\\\
+    \textbf{DON'T SAY: }The guard will issue security badges to the employees who work in Building D and Building E.\\
+    \textbf{SAY: }The guard will issue a security badge to each employee who works in Building D and each employee who works in Building E.\\
+    \textbf{unless you mean}\\
+    The guard will issue a security badge to each employee who works in both Building D and Building E. (There are other possible meanings.)
+    \section{Be consistent. Don't use different words to denote the same things.}
+    Variation for the sake of variation has no place in regulation writing. Using a synonym rather than repeating the precise term you intend just confuses the reader.\\\\
+    \textbf{DON'T SAY: }Each motor vehicle owner must register his or her car with the Automobile Division of the Metropolitan Police Department.\\
+    \textbf{SAY: }Each automobile owner must register his or her automobile with the Automobile Division of the Metropolitan Police Department.\\\\
+    \textbf{Don't use the same word to denote different things.}
+    \textbf{DON'T SAY:} The tank had a 200-gallon tank for fuel.
+    \textbf{SAY: }The tank had a 200-gallon fuel container.
+    \section{Use parallel structure}
+    Arrange sentences so that parallel ideas look parallel. This is important when you use a list.\\\\
+    \textbf{Nonparallel construction:}
+    The duties of the Executive Secretary of the Administrative Committee are:
+\begin{itemize}
+    \item To take minutes of all the meetings; (phrase)
+\item    The Executive Secretary answers all the correspondence; and (clause)
+    \item Writing of monthly reports. (topic)
+
+\end{itemize}
+    
+\textbf{Parallel construction:}
+\begin{itemize}
+    \item To take minutes of all the meetings;
+\item    To answer all the correspondence; and
+    \item To write the monthly reports.
+\end{itemize}
+    \section{Prefer simple words}
+    Government writing should be dignified, but doesn't have to be pompous. Writing can be dignified when the language is simple, direct, and strong. To make your writing clearer and easier to read -- and thus more effective -- prefer the simple word. \\
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+           \textsc{\textbf{Don't Say}}  &  \textsc{\textbf{Don't Say}}\\
+            construct, fabricate  & make\\
+            initiate, commence & begin\\
+            terminate, & end\\
+            utilize & use\\
+            substantial portion & large part\\
+            afforded an opportunity && allow
+        \end{tabular}
+        \caption{Simple Alternatives}
+        \label{tab:simple}
+    \end{table}
+    \section{Omit needless words}
+     Don't use compound prepositions and other wordy expressions when the same meaning can be conveyed with one or two words. \\
+         \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+           \textsc{\textbf{Don't Say}}  &  \textsc{\textbf{Say}}\\
+            because of the fact that  & since(because)\\
+            call your attention to the fact that & 	remind you\\
+            for the period of & for\\
+            in many cases & often\\
+            in many instances & sometimes\\
+            in the nature of && like\\
+            the fact that he had not succeeded & his failure\\
+            the question as to whether & whether
+        \end{tabular}
+        \caption{Word Reduction Example}
+        \label{tab:needless}
+    \end{table}
+    \section{Avoid redundancies}
+     Don't use word pairs, if the words have the same effect or where the meaning of one included the other.\\\\
+    Examples: Word pairs to avoid 
+    \begin{itemize}
+        \item any and all
+        \item authorize and direct
+        \item cease and desist
+        \item each and every
+        \item full and complete
+        \item order and direct
+        \item means and includes
+        \item necessary and desirable
+    \end{itemize}
+    \section{Use concrete words}
+    Government writing often concerns abstract subjects. But abstract words can be vague and open to different interpretations. Put instructions in simple, concrete words. \\
+        \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+           \textsc{\textbf{Don't Say}}  &  \textsc{\textbf{Say}}\\
+            clubs & RSOs\\
+            vehicles & automobiles\\
+            firearms & rifles\\
+            aircraft & helicopters
+        \end{tabular}
+        \caption{Concrete }
+        \label{tab:concrete}
+    \end{table}
+    \section{Don't use words that antagonize}
+    Words can attract or repel readers. It is possible to choose words in our writing that do not make the wrong impression or antagonize our readers. Use words to which people react favorably rather than words that they resent. 
+    \begin{multicols}
+    \hphantom{}
+    \subsection*{Use words like}
+    \begin{itemize}
+        \item ability
+        \item achieve
+        \item benefit
+        \item guarantee
+        \item please
+        \item reasonable
+        \item reliable
+        \item service
+        \item useful
+        \item you
+    \end{itemize}
+    \subsection*{Rather than these words}
+    \begin{itemize}
+        \item alibi
+        \item allege
+        \item blame
+        \item complaint
+        \item impossible
+        \item liable
+        \item oversight
+        \item unfortunate
+        \item waste
+        \item wrong
+    \end{itemize} 
+    \end{multicols}
+    \section{Avoid noun sandwiches}
+    Administrative writing uses too many noun clusters -- groups of nouns "sandwiched" together. Avoid these confusing constructions by using more prepositions.\\\\
+    \textbf{DON'T SAY: }Underground mine worker safety protection procedures development.\\
+    \textbf{SAY: }Development of underground procedures for the protection of the safety of mine workers.\\
+    \textbf{OR MORE LIKELY: }Development of procedures for the protection of the safety of workers in underground mines.\\\\
+    Which meaning is intended becomes clearer when this four-word sandwich is broken up. 
+    \section{Don't Use gender-specific terminology}
+    Avoid the gender-specific job title:\\
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{c|c}
+           \textsc{\textbf{Don't Say}}  &  \textsc{\textbf{Say}}\\
+            Crewman & Crew member\\
+            Fireman & Firefighter\\
+            Manhours & Hours worked\\
+            Manpower & Personnel, workforce
+        \end{tabular}
+        \caption{Gender-specific alternatives}
+        \label{tab:genderalts}
+    \end{table}
+    Avoid the gender-specific pronoun when the antecedent could be male or female.\\\\
+    \textbf{DON'T SAY: }The administrator or his designee must complete the evaluation form.\\
+    \textbf{SAY: }The administrator or the administrator's designee must complete the evaluation form.\\\\
+    Be careful when you rewrite to avoid the problem. The following examples don't necessarily have the same meaning:
+\begin{itemize}
+    \item Each Regional Director will announce his or her recommendations at the conference.
+    \item The Regional Directors will announce their recommendation at the conference.
+\end{itemize}
+    \section{Write short sentences}
+    Readable sentences are \textbf{simple, active, affirmative, and declarative.}\\
+The more a sentence deviates from this structure, the harder the sentence is to understand.\\
+Long, run-on sentences are a basic weakness in legal documents.\\
+Legal documents often contain conditions which result in complex sentences with many clauses.\\
+The more complex the sentence, the greater the possibility for difficulty in determining the intended meaning of the sentence. 
+\subsection*{Solutions}
+\begin{itemize}
+    \item State one thing and only one thing in each sentence.
+\item Divide long sentences into two or three short sentences.
+\item Remove all unnecessary words. Strive for a simple sentence with a subject and verb. Eliminate unnecessary modifiers.
+\item If only one or two simple conditions must be met before a rule applies, state the conditions first and then state the rule.
+\item If two or more complex conditions must be met before a rule applies, state the rule first and then state the conditions.
+\item If several conditions or subordinate provisions must be met before a rule applies, use a list.
+\end{itemize}
+\section{Make lists clear and logical in structure}
+ Listing provides white space that separates the various conditions. Listing can help you avoid the problems of ambiguity caused by the words "and" and "or". When you list, use the following rules:
+ \begin{itemize}
+     \item Use parallel structure
+     \item List each item so that it makes a complete thought when read with the introductory text. 
+     \item If the introductory language for the list is a complete sentence --
+     \begin{itemize}
+         \item End the introduction with a colon; and
+        \item Make each item in the list a separate sentence.
+     \end{itemize}
+     \item If the introductory language for the list is an incomplete sentence -- 
+     \begin{itemize}
+         \item End the introduction with a dash;
+\item End each item in the list except the last item with a semicolon;
+\item After the semicolon in the next-to-last item in the list, write "and" or "or" as appropriate; and
+\item End the last item in the list with a period.
+     \end{itemize}
+ \end{itemize}
+ \section{Use short paragraphs}
+  A writer may improve the clarity of a regulation by using short, compact paragraphs. Each paragraph should deal with a single, unified topic. Lengthy, complex, or technical discussions should be presented in a series of related paragraphs.
+\section{Use a checklist and review your draft for each of these principles separately. }
+    \chapter{Ambiguity}
+	    \section{Word Order}
+	        The position of words in a sentence is the principal means of showing their relationship. You should group together words that are related in thought and separate words that are not related. The following conventions address the most common word order problems.
+            \subsection{Avoid misplaced modifiers}
+                The careless placement of a modifier may result in the same sentence having several meanings.\\\\
+                \textbf{DON'T SAY}: John saw Jane driving down the street.\\
+                \textbf{SAY}: John, while driving down the street, saw Jane.\\
+                \textbf{unless you mean}\\
+                John saw Jane, who was driving down the street.
+            \subsection{Avoid indefinite pronouns used as references} 
+                If a pronoun could refer to more than one person or object in a sentence, repeat the name of the individual or object.\\\\
+                \textbf{DON'T SAY}: After the administrator appoints an Assistant, he or she shall supervise the...\\
+                \textbf{SAY}: After the Administrator appoints an Assistant, the Assistant shall supervise the...
+            \subsection{Avoid grouping together two or more prepositional phrases} 
+                A common example of a problem of word order occurs when two or more prepositional phrases are grouped together in a sentence.\\\\
+                \textbf{DON'T SAY}: Each subscriber to a newspaper in Washington, DC.\\
+                \textbf{SAY}: Each newspaper subscriber who lives in Washington, DC.\\
+                \textbf{unless you mean}\\
+                Each subscriber to a newspaper published in Washington, DC.
+        \section{Word Meaning}
+        Problems of word meaning occur when one word or phrase is open to several possible interpretations. The following conventions address the most common problems of word meaning.
+            \subsection{Use the singular noun rather than the plural noun} 
+                To the extent your meaning allows, use a singular noun instead of a plural noun. You will avoid the problem of whether the rule applies separately to each member of a class or jointly to the class as a whole.\\\\
+                \textbf{DON'T SAY:} The guard will issue security badges to employees who work in Building D and Building E. \\
+                \textbf{SAY:} The guard will issue a security badge to each employee who works in Building D and each employee who works in Building E.\\
+                \textbf{unless you mean}\\
+                The guard will issue a security badge to each employee who works in both Building D and Building E. (There are other possible meanings). 
+            \subsection{Draft an expression of time as accurately as possible} 
+            You can eliminate uncertainty as to when a time period begins or ends by clearly stating the first and last days of that period.\\\\
+            \textbf{DON'T SAY:} From July 1, 19\_\_, until June 30, 19\_\_.\\
+            \textbf{SAY:} After June 30, 19\_\_, and before July 1, 19\_\_.\\\\
+            If a time period is measured in whole days, use the word "day" instead of "time". A reader may interpret the word "time" to mean an exact time during the day or night an event occurs.\\\\
+            \textbf{DON'T SAY:} Thirty days after the time when....\\
+            \textbf{SAY:} Thirty days after the day on which....\\\\
+            Avoid the use of time relational words such as "now", "presently", and "currently" in your regulations. Use of these words to relate a provision in your regulations to the time the regulations takes effect creates an ambiguity. It is unclear whether the provision in the regulations should change if the "current" fact changes after the regulation takes effect.\\\\
+            \textbf{DON'T SAY:} The Mayor of the District of Columbia is entitled to a salary equal to that of a GS-15, step 2, as now prescribed by law.\\\\
+            [You know what the Mayor's salary is on the day the regulation takes effect but what salary does the Mayor receive if Congress changes the pay rate for a GS-15 one week, one month, or one year after the regulation takes effect?]\\
+            If, in the example above, you intend the provision to remain unchanged after the regulation takes effect, it is better to determine what the provision would be on the day the regulation takes effect and write that specific provision into your regulation.\\\\
+            \textbf{SAY:} The Mayor of the District of Columbia is entitled to a salary of \$\_\_\_\_\_\_\_\_\_\_\_\_.\\\\
+            However, if you intend the provision to change as time passes, make that fact clear.\\\\
+            \textbf{SAY:} The Mayor of the District of Columbia is entitled to a salary equal to that of GS-15, step 2. The GS-15, step 2, salary is adjusted by Congress.
+        \subsection{Draft an expression of range as accurately as possible}
+             Similar problems occur when you express an range requirement. The expression "more than 21 years old" has two possible meanings. A person may be "more than 21" on his or her 21$^{\rm st}$ birthday, or on their 22$\rm ^{nd}$ birthday. Depending upon which meaning you intend, clarify the ambiguity as follows:\\\\
+             \textbf{DON'T SAY:} A person who is more than 21 years old...\\
+             \textbf{SAY: }A person who is 21 years old or older...\\
+             \textbf{unless you mean}\\
+             A person who is 22 years old or older...\\\\
+             \textbf{DON'T SAY: }Between the ages of 16 and 20...\\
+             \textbf{SAY: }Is 16 years old or older and under 21...
+         \subsection{Do not use privisos} 
+         The priviso is archaic, legalistic, and usually results in a long and unintelligible sentence. Use the following drafting conventions to avoid expressions such as "provided however" and "provided always".
+        \begin{itemize}
+            \item To introduce a qualification or limitation to the rule, use "but".
+            \item To introduce an exception to the rule, use "except that".
+            \item To introduce a condition to the rule, use "if".
+            \item If the clause is a separate complete thought, start a new sentence or subsection
+        \end{itemize}
+    \chapter{Creating Definitions}
+    \section{Avoid unnecessary definitions} The main purpose of a definition is to achieve clarity without needless repetition. For this reason, "it is unnecessary" to define ordinary words that are used in their usual dictionary meaning.\\\\
+\textbf{DON'T SAY: }Trash can means a receptacle for waste material.
+\section{Do not define in a way that conflicts with ordinary or accepted usage}
+If possible, use a word in a way that is consistent with the its everyday meaning and do not define the word. Otherwise, you confuse the reader and risk using the word elsewhere in your regulations in its ordinary sense.\\\\
+\textbf{DON'T SAY:} Airplane means an airplane, helicopter, or hot-air balloon.\\
+\textbf{SAY: }Aircraft means a device that is used or intended to be used for flight.\\\\
+[Here the definition is broad enough to include any device that flies and at the same time the word is not used in a way that conflicts with its ordinary meaning.]
+\section{Do not define a term that is used only once or infrequently} If a term is used only once or infrequently, spell out the meaning of the term at those few places it appears in the regulations.
+\section{Do not include part or all of the term being defined in the text of your definition} 
+A true definition should not include the term being defined as part of the definition. This forces the reader to consult a dictionary or look elsewhere in the regulations for the complete meaning.\\\\
+\textbf{DON'T SAY: Excepted position} means a position in the excepted service.
+\section{Do not include a substantive rule within a definition} 
+A reader can easily miss a rule placed within a definition.
+\textbf{DON'T SAY:} Sec. 200. \textbf{Definitions.} For the purpose of this part, \textbf{alcoholic beverage} means beer, wine, and liquor. Each owner of a business establishment serving alcoholic beverages must obtain a license.
+\section{ Place a definition where it is most easily found by the reader} Generally, define a term that is used throughout a part or chapter at the beginning of that part or chapter. If you have a term that is used only once or in a few closely related sections, place the definition in the section where the term is used first.
+\section{Draft the regulations first, then draft the definitions}
+It is difficult to determine how many times a particular word or concept will be used in a set of regulations before you start drafting. If you draft definitions before you draft your regulations, you may define a word that is not used.\\
+Often a concept that is used in a set of regulations is complex and you must develop a phrase to use as shorthand for that concept. If you develop the phrase before you draft the regulations, the phrase may not be as appropriate as one developed during the process of drafting.
+\section{Do not use "must" in a definition} 
+The definition section of your regulations should not obligate anyone to do anything. For this reason, "must" is inappropriate for a definition. Instead, use the indicative mood.\\\\
+\textbf{DON'T SAY: }Agency head must mean...\\\textbf{
+SAY: }Agency head means...
+\section{How to list definitions} 
+If you have a group of terms that you want to group together, use the following conventions:
+\begin{itemize}
+    \item Place the terms in a section called "Definitions".
+    \item Place the defined terms in alphabetical order.
+    \item Do not give any defined term a paragraph designation, for example, (a), (b), (c); however, subparagraphs are designated (1), (2), (3).
+\end{itemize}
+    This method of listing definitions makes your task easier if you ever have to add or remove definitions. You do not have to change the paragraph designation of each term that appears after terms are added or removed. 
+	\end{linenumbers}
+\chapter{Sources Relied Upon}
+	\hyperlink{https://www.archives.gov/federal-register/write/legal-docs}{Federal Register | Drafting Legal Documents}\\
+	
+\end{document}          
